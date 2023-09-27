@@ -1,0 +1,9 @@
+@import url("static/fonts/Montserrat/fonts/webfonts/Montserrat-Alt1.css");
+
+@media screen and (max-width: 80rem) { 
+    .menu { 
+      display: none; 
+    } 
+  }
+
+  

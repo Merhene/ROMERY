@@ -1,8 +1,11 @@
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+const links = document.querySelectorAll("nav li");
+
+icons.addEventListener("click", () => {
+  nav.classList.toggle("active");
+})
+
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.remove("active");
+  });
+});

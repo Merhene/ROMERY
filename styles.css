@@ -1,0 +1,96 @@
+:root {
+  --backround-color: black;
+  --font-color: #DE9C52;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat-Alt1", Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: var(--backround-color);
+}
+
+img {
+  width: 7.25rem;
+  height: 4.5rem;
+}
+
+#icons {
+  display: block;
+  color: #DE9C52;
+}
+
+#icons:before {
+  content: "\2630";
+}
+
+.active #icons:before {
+  content: "\2715";
+}
+
+nav ul {
+  position: fixed;
+  left: -100%;
+  top: 10%;
+  flex-direction: column;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  color: #DE9C52;
+}
+
+nav li {
+  padding: 3px 0;
+  color: #DE9C52;
+}
+
+nav li:hover {
+  background-color: #efd5b9;
+}
+
+nav.active ul {
+  left: 0;
+}
+
+@media (min-width: 600px) {
+  h3 {
+    color: #DE9C52;
+  }
+  
+  a,
+  a:visited {
+    color: #DE9C52;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+  }
+  
+  a:hover {
+    color: #efd5b9;
+  }
+  
+  nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-size: calc(0.5rem + 1.5vw);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  #icons {
+    cursor: pointer;
+    display: none;
+  }
+}

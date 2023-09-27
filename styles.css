@@ -5,5 +5,62 @@
       display: none; 
     } 
   }
+:root {
+  
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+
+}
+
+
 
   
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #DE9C52;
+    position: relative;
+  }
+  
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  
+  .topnav a {
+    color: #DE9C52;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  
+  .topnav a.icon {
+    
+    color: #DE9C52;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #DE9C52;
+  }
+  
+ 
+  .active {
+    background-color: #000000;
+    color: #DE9C52;
+  }

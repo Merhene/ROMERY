@@ -17,11 +17,8 @@
   box-sizing: none;
   background-color: var(--background-color);
   font-family: ' Montserrat-Alt1 ', sans-serif;
+  color: red;
 }
-
-
-
-
 
 .topnav {
   overflow: hidden;
@@ -29,11 +26,9 @@
   position: relative;
 }
 
-
 .topnav #myLinks {
   display: none;
 }
-
 
 .topnav a {
   color: var(--color);
@@ -43,7 +38,6 @@
   display: block;
 }
 
-
 .topnav a.icon {
 
   color: var(--color);
@@ -52,7 +46,6 @@
   right: 0;
   top: 0;
 }
-
 
 .active {
   background-color: var(--background-color);

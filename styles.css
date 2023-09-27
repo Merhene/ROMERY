@@ -1,66 +1,59 @@
 @import url("static/fonts/Montserrat/fonts/webfonts/Montserrat-Alt1.css");
 
-@media screen and (max-width: 80rem) { 
-    .menu { 
-      display: none; 
-    } 
+@media screen and (max-width: 80rem) {
+  .menu {
+    display: none;
   }
-:root {
-  
 }
 
-
-
+:root {
+  --background-color: black;
+  --color: #DE9C52;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: none;
-
+  background-color: var(--background-color);
 }
 
 
 
-  
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #DE9C52;
-    position: relative;
-  }
-  
-  
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  
-  .topnav a {
-    color: #DE9C52;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  
-  .topnav a.icon {
-    
-    color: #DE9C52;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
- 
-  .topnav a:hover {
-    background-color: #ddd;
-    color: #DE9C52;
-  }
-  
- 
-  .active {
-    background-color: #000000;
-    color: #DE9C52;
-  }
+
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--color);
+  position: relative;
+}
+
+
+.topnav #myLinks {
+  display: none;
+}
+
+
+.topnav a {
+  color: var(--color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+.topnav a.icon {
+
+  color: var(--color);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.active {
+  background-color: var(--background-color);
+  color: var(--color);
+}

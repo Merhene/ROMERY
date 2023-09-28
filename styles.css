@@ -1,19 +1,26 @@
 :root {
   --backround-color: black;
   --font-color: #DE9C52;
+  --font-family-nav: "Montserrat-Alt1", Verdana, Geneva, Tahoma, sans-serif;
+  --font-family-body: "Montserrat-Alt1 Thin", Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat-Alt1", Verdana, Geneva, Tahoma, sans-serif;
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--backround-color);
+  font-family: var(--font-family-body);
 }
 
 img {
@@ -41,14 +48,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.5em;
+  font-family: var(--font-family-nav);
 }
 
 nav ul {
   position: fixed;
   left: -100%;
-  top: 15%;
+  top: 10%;
   flex-direction: column;
-  background-color: #272626;
+  background-color: rgba(39, 38, 38, .2);
   width: 100%;
   text-align: center;
   transition: 0.5s;

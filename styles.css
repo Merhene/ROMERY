@@ -1,21 +1,27 @@
 :root {
   --backround-color: black;
   --font-color: #DE9C52;
-  --text-font: "Montserrat-Alt1 Thin";
+  --font-family-nav: "Montserrat-Alt1", Verdana, Geneva, Tahoma, sans-serif;
+  --font-family-body: "Montserrat-Alt1 Thin", Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat-Alt1", Verdana, Geneva, Tahoma, sans-serif;
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--backround-color);
+  font-family: var(--font-family-body);
 }
 
 img {
@@ -96,9 +102,6 @@ height: auto;
   padding: 10px;
   border-radius: 5px;
   font-size: calc(0.4em + 1vw); /* Ceci ajuste la taille de la police en fonction de la largeur de la fenêtre tout en garantissant qu'elle ne descende jamais en dessous de 1rem. */
-  min-font-size: 0.5rem; /* Ceci garantit que la taille de la police ne sera jamais inférieure à 1rem. */
-  max-font-size: 0.5rem; /* Ceci garantit que la taille de la police ne dépassera jamais 2rem. */
-  /* ... vos autres styles ... */
 }
 
 .slide-nav {
@@ -160,14 +163,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.5em;
+  font-family: var(--font-family-nav);
 }
 
 nav ul {
   position: fixed;
   left: -100%;
-  top: 9%;
+  top: 10%;
   flex-direction: column;
-  background-color: #272626;
+  background-color: rgba(39, 38, 38, .2);
   width: 100%;
   text-align: center;
   transition: 0.5s;

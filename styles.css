@@ -1,0 +1,124 @@
+:root {
+  --backround-color: black;
+  --font-color: #DE9C52;
+  --font-family-nav: "Montserrat-Alt1", Verdana, Geneva, Tahoma, sans-serif;
+  --font-family-body: "Montserrat-Alt1 Thin", Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--backround-color);
+  font-family: var(--font-family-body);
+}
+
+img {
+  width: 7.25rem;
+  height: 4.5rem;
+}
+
+#icons {
+  color: #DE9C52;
+}
+
+#icons:before {
+  content: "\2630";
+  font-size: 1.875rem;
+}
+
+.active #icons:before {
+  content: "\2715";
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  font-family: var(--font-family-nav);
+}
+
+nav ul {
+  position: fixed;
+  left: -100%;
+  top: 10%;
+  flex-direction: column;
+  background-color: rgba(39, 38, 38, .2);
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  color: #DE9C52;
+}
+
+nav li {
+  text-decoration: none;
+  padding: 3px 0;
+  color: #DE9C52;
+}
+
+nav li:hover {
+  background-color: #efd5b9;
+}
+
+nav.active ul {
+  left: 0;
+}
+
+a,
+a:visited {
+  color: #DE9C52;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: var(--backround-color);
+  }
+
+  img {
+    width: 7.25rem;
+    height: 4.5rem;
+  }
+
+  a:hover {
+    color: #efd5b9;
+  }
+
+  nav {
+    background-color: var(--backround-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(0.5rem + 1.5vw);
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    left: 0;
+    position: initial;
+    background-color: var(--backround-color);
+  }
+
+  #icons {
+    cursor: pointer;
+    display: none;
+  }
+}

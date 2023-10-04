@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation</title>
+
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulaire de réclamation</h1>
+        <img src="images/romery.png" alt="Logo du restaurant ROMERY">
+    </header>
+
+    <main>
+        <p>Pour toute demande de réservation, veuillez s'il vous plait remplir le formulaire
+            suivant.</p>
+
+        <form action="form.php" method="post">
+            <div>
+                <label for="name">Votre nom : </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+           
+            
+            <div>
+                <label for="email">Votre email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Votre message : </label>
+                <textarea name="message" id="message" rows="10" minlength="30" required></textarea>
+            </div>
+
+            <div class="buttonsLine">
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

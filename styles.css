@@ -216,12 +216,6 @@ a:visited {
     height: 4.5rem;
   }
 
-
-
-  a:hover {
-    color: #efd5b9;
-  }
-
   .home-txt {
     display: flex;
     justify-content: center;
@@ -275,9 +269,9 @@ a:visited {
 }
 
   #home>img {
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
 }

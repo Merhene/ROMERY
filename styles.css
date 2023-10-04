@@ -43,7 +43,7 @@ img {
 #home>img {
   width: 100%;
   height: auto;
-  margin-top: 7%;
+  margin-top: 25%;
 }
 
 .home-txt {
@@ -167,6 +167,9 @@ nav {
   align-items: center;
   padding: 0.5em;
   font-family: var(--font-family-nav);
+  position: fixed;
+  width: 100%;
+  padding-top: 0%;
 }
 
 nav ul {
@@ -178,16 +181,13 @@ nav ul {
   width: 100%;
   text-align: center;
   transition: 0.5s;
-  color: #DE9C52;
+  color: var(--title-color);
 }
 
 nav li {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   text-decoration: none;
   padding: 3px 0;
-  color: #DE9C52;
+  color: var(--title-color);
 }
 
 nav li:hover {
@@ -216,8 +216,33 @@ a:visited {
     height: 4.5rem;
   }
 
+
+
   a:hover {
     color: #efd5b9;
+  }
+
+  .home-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8rem;
+    color: var(--font-color);
+    font-weight: lighter;
+    font-size: 1.75rem;
+    text-align: justify;
+  }
+  
+  .home-txt .gm {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: row;
+    margin: 8rem;
+    color: var(--font-color);
+    font-weight: lighter;
+    font-size: 1.25rem;
   }
 
   nav {
@@ -249,11 +274,11 @@ a:visited {
     }
 }
 
-#home>img {
-  width: 800px;
-  height: auto;
-  margin: 0 auto;
-}
+  #home>img {
+    width: 100%;
+    height: auto;
+    margin-top: 15%;
+  }
 
 }
 

@@ -28,9 +28,6 @@ if (strlen($message) < 30) {
     $errors[] = 'Le champ message doit contenir plus de 30 caractères';
 }
 
-
-
-
 if (!empty($errors)) {
     require 'error.php';
     die();
@@ -49,21 +46,18 @@ if (!empty($errors)) {
 </head>
 
 <body>
-
     <header>
         <h1>Nous traitons votre réservation.</h1>
-        <img src="Images/romery.png" alt="Logo du restaurant ROMERY">
+        <img src="Images/frame.png" alt="Logo du restaurant ROMERY">
     </header>
-
     <main>
         <div class="summary">
            
             <p>
-                <img src="Images/romery.png" alt="Logo du restaurant ROMERY">
-                <span>Votre restaurant</span>
+                <img src="Images/ROMERY-BLCK.png" alt="Logo du restaurant ROMERY">
+                <span></span>
             </p>
             
-
             <ul>
                 <li>Votre nom : <span><?= $name; ?></span></li>
                 <li>Votre email : <span><?= $email; ?></span></li>
@@ -71,8 +65,13 @@ if (!empty($errors)) {
                     <p><?= $message; ?></p>
                 </li>
             </ul>
+           
+
         </div>
-    </main>
+
+       
+        </main>
+       
 </body>
 
 </html>

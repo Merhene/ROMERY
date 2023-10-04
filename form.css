@@ -1,7 +1,7 @@
 :root {
-    --primary: rgb(0, 0, 0);
-    --secondary: #DE9C52;
-    color: #DE9C52;
+    --primary: #1d1d1d;
+    --secondary: #C1b196;
+    color: #c1b196;
     --title-size: 3rem;
     --error: crimson;
     font-family: "Montserrat-Alt1 Thin", Verdana, Geneva, Tahoma, sans-serif;
@@ -31,7 +31,7 @@
   
   header h1 {
     font-size: var(--title-size);
-    color: #DE9C52;
+    color: #d9d1b9;
   }
   
   header img {
@@ -129,7 +129,7 @@
     border: solid;
     border-radius: 8px;
     color: black;
-    background-color: #DE9C52;
+    background-color: #c1b196;
   }
 
   button:hover {

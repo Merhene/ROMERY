@@ -1,6 +1,9 @@
 :root {
-  --backround-color: black;
-  --font-color: #DE9C52;
+  --backround-color: #1d1d1d;
+  --title-color: #f1eddc;
+  --font-color: #d9d1b9;
+  --secondary-color: #c1b596;
+  --link-color: #a99973;
   --font-family-nav: "Montserrat-Alt1", Verdana, Geneva, Tahoma, sans-serif;
   --font-family-body: "Montserrat-Alt1 Thin", Verdana, Geneva, Tahoma, sans-serif;
 
@@ -179,6 +182,9 @@ nav ul {
 }
 
 nav li {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   text-decoration: none;
   padding: 3px 0;
   color: #DE9C52;

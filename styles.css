@@ -19,6 +19,9 @@
 }
 
 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
   height: auto;
 }
@@ -74,12 +77,6 @@ body {
   font-size: 0.75rem;
 }
 
-h2 {
-  width: 7.25rem;
-  height: 4.5rem;
-  padding-bottom: 0%;
-}
-
 .slider {
   position: relative;
   width: 100%;
@@ -96,6 +93,7 @@ height: auto;
   max-width: 800px;
   height: auto;
   display: block;
+margin-left: 1.25rem;
 }
 
 .slide p {
@@ -212,7 +210,8 @@ a:visited {
 
 /* Css de la page best sellers*/
 
-.logo-menu-container {
+.logo-menu-container,
+.logo-aboutus-container {
   width: 60%;
   margin: 3rem auto;
 }
@@ -257,7 +256,8 @@ a:visited {
   border-radius: 8px;
   height: 100%;
   backface-visibility: hidden;
-  transition: 2s;
+  transition: 0.5s;
+  object-fit: cover;
 }
 
 .verso {
@@ -270,7 +270,7 @@ a:visited {
   height: 100%;
   backface-visibility: hidden;
   transform: rotateY(180deg);
-  transition: 2s;
+  transition: 0.5s;
 }
 
 .card:hover .verso {

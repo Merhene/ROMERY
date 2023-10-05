@@ -236,6 +236,7 @@ form {
   font-size: large;
   font-weight: bold;
   color: var(--font-color);
+  width: 90%;
 }
 
 form div {

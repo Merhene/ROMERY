@@ -78,7 +78,7 @@ h2 {
 .slider {
   position: relative;
   width: 100%;
-height: auto;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -86,13 +86,12 @@ height: auto;
   display: none;
 }
 
-
-
 .slide img {
   width: calc(100vw - 40px);
   max-width: 800px;
   height: auto;
   display: block;
+  margin-left: 1.25rem;
 }
 
 .slide p {
@@ -104,7 +103,8 @@ height: auto;
   background-color: rgba(0, 0, 0, 0.65);
   padding: 10px;
   border-radius: 5px;
-  font-size: calc(0.4em + 1vw); /* Ceci ajuste la taille de la police en fonction de la largeur de la fenêtre tout en garantissant qu'elle ne descende jamais en dessous de 1rem. */
+  font-size: calc(0.4em + 1vw);
+  /* Ceci ajuste la taille de la police en fonction de la largeur de la fenêtre tout en garantissant qu'elle ne descende jamais en dessous de 1rem. */
 }
 
 .slide-nav {
@@ -115,7 +115,8 @@ height: auto;
   justify-content: space-between;
 }
 
-.slide-prev, .slide-next {
+.slide-prev,
+.slide-next {
   background: none;
   border: none;
   color: white;
@@ -145,9 +146,8 @@ height: auto;
   opacity: 1;
 }
 
-
 #icons {
-  color: #DE9C52;
+  color: var(--link-color);
 }
 
 #icons:before {
@@ -169,7 +169,8 @@ nav {
   font-family: var(--font-family-nav);
   position: fixed;
   width: 100%;
-  padding-top: 0%;
+  top: 0%;
+  z-index: 1000;
 }
 
 nav ul {
@@ -181,7 +182,7 @@ nav ul {
   width: 100%;
   text-align: center;
   transition: 0.5s;
-  color: var(--title-color);
+  color: var(--link-color)
 }
 
 nav li {
@@ -190,20 +191,83 @@ nav li {
   color: var(--title-color);
 }
 
-nav li:hover {
-  background-color: #efd5b9;
-}
-
 nav.active ul {
   left: 0;
 }
 
 a,
 a:visited {
-  color: #DE9C52;
+  color: var(--link-color);
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+}
+
+/* CSS FORM */
+
+div>.summary {
+  margin: 0;
+  min-height: 100vh;
+  border: 0.2vw solid var(--secondary-color);
+}
+
+form,
+.summary,
+.errorPanel {
+  width: 60%;
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px -5px rgb(69, 69, 69);
+  background-color: #413f3f;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: large;
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  width: 83%;
+  border-radius: 0.3rem;
+}
+
+form button {
+  font-size: large;
+  padding: 1rem;
+  font-family: var(--font-family-body);
+  font-weight: bold;
+}
+
+
+form button img {
+  margin-bottom: -5px;
+  width: 20px;
+}
+
+
+
+
+
+
+iframe {
+  width: 80%;
+  height: 60%;
 }
 
 @media (min-width: 768px) {
@@ -227,7 +291,7 @@ a:visited {
     font-size: 1.75rem;
     text-align: justify;
   }
-  
+
   .home-txt .gm {
     display: flex;
     justify-content: right;
@@ -245,6 +309,7 @@ a:visited {
     justify-content: space-between;
     align-items: center;
     font-size: calc(0.5rem + 1.5vw);
+    z-index: 1000;
   }
 
   nav ul {
@@ -261,12 +326,71 @@ a:visited {
     cursor: pointer;
     display: none;
   }
+
+  div>.summary {
+    margin: 0;
+    min-height: 100vh;
+    border: 0.2vw solid;
+  }
+
+  div>.summary>p,
+  div>.summary>li {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  form,
+  .summary,
+  .errorPanel {
+    width: 60%;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px -5px rgb(69, 69, 69);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  form div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form input,
+  form textarea {
+    padding: 0.5rem;
+    width: 83%;
+    border-radius: 0.5rem;
+  }
+
+  form button {
+    font-size: large;
+    padding: 1rem;
+  }
+
+
+  form button img {
+    margin-bottom: -5px;
+    width: 20px;
+  }
+
   @media (min-width: 768px) {
     .slide img {
-        max-width: 800px; /* ou toute autre valeur que vous jugez appropriée */
-        margin: 0 auto; /* pour centrer l'image */
+      max-width: 800px;
+      /* ou toute autre valeur que vous jugez appropriée */
+      margin: 0 auto;
+      /* pour centrer l'image */
     }
-}
+  }
 
   #home>img {
     width: 50%;
@@ -276,5 +400,4 @@ a:visited {
 
 }
 
-@media (max-width: 400px) {
-}
+@media (max-width: 400px) {}

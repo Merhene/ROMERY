@@ -1,0 +1,90 @@
+/* Css de la page best sellers meme chose que pour le HTML on verra */
+:root {
+    --backround-color: #1d1d1d;
+    --title-color: #f1eddc;
+    --font-color: #d9d1b9;
+    --secondary-color: #c1b596;
+    --link-color: #a99973;
+    --font-family-nav: "Montserrat-Alt1", Verdana, Geneva, Tahoma, sans-serif;
+    --font-family-body: "Montserrat-Alt1 Thin", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+h4 {
+    padding: 0.3rem;
+
+}
+
+h3 {
+
+    font-size: 6rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cards-container {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.card {
+    width: 250px;
+    height: 400px;
+    perspective: 600px;
+}
+
+.card:hover .recto {
+    transform: rotateY(-180deg);
+}
+
+.recto {
+    border: solid 2px var(--secondary-color);
+    border-radius: 15px;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 2s;
+}
+
+.verso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 2px var(--secondary-color);
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: 2s;
+}
+
+.card:hover .verso {
+    transform: rotateY(0);
+}
+
+.details {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .cards-container {
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+}
